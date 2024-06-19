@@ -100,9 +100,7 @@ body {
 
 
 /* //........top text ........// */
-
 :root {
-    /* //....... Color ........// */
     --primary-color: #ff3c78;
     --light-black: rgba(0, 0, 0, 0.89);
 
@@ -1160,7 +1158,7 @@ header .form {
     .discount .cont p {
         line-height: 2;
         text-align: center;
-        font-size: 15px;
+        font-size: 18px;
         max-width: 300px;
     }
 
@@ -1284,10 +1282,12 @@ footer .f-design a {
 
 @media (max-width: 767px) {
 
-    .home_txt h2,
-    .home_txt .home_label p {
+    .home_txt h2 {
         font-size: 18px;
-        font-weight: 700;
+    }
+
+    .home_txt .home_label p {
+        font-size: 12px;
         max-width: 80%;
     }
 
@@ -1299,8 +1299,8 @@ footer .f-design a {
     }
 
     .home_txt button {
-        padding: 7px 7px;
-        font-size: 15px;
+        padding: 2px 5px;
+        font-size: 13px;
     }
 
     .home_txt i {

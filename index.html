@@ -20,7 +20,7 @@
 <body>
     <!-- start header -->
     <header>
-        <div class="continer ">
+        <div class="continer">
             <a href="" class="logo">
                 <img src="images/logo.png" alt="logo">
             </a>
@@ -34,26 +34,15 @@
                     <li><a href="">contact</a></li>
                 </ul>
                 <div class="form">
-
-                    <div class="cart-icon" onclick="toggleCart()">
+                    <div class="cart-icon" onclick="redirectToCartPage()">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-badge" id="cartCount">0</span>
                     </div>
-
-                    <div class="cart-modal" id="cartModal">
-                        <div class="cart-content">
-                            <span class="close-cart" onclick="toggleCart()">&times;</span>
-                            <h2>Your Cart</h2>
-                            <div id="cartItems"></div>
-                            <button onclick="checkout()">Checkout</button>
-                        </div>
-                    </div>
-
                 </div>
             </nav>
-
         </div>
     </header>
+
     <!-- end header  -->
     <!-- start landing page -->
     <section id="home">
@@ -372,15 +361,13 @@
 
                         </div>
                         <div class="buy-now">
-                            <button
-                                onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
                                 <a>
                                     Add to Cart
-                                    
+
                                 </a>
                             </button>
-                            <button
-                            onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
 
 
                                 <a href="checkout.html">Buy now</a>
@@ -392,7 +379,7 @@
             </div>
         </div>
 
-        
+
         <!-- <div class="seller container">
             <h2>Hot Sales</h2>
             <div class="best-seller">
@@ -591,72 +578,73 @@
             </div>
         </div>
     </section> -->
-    <!-- end news  -->
-    <!-- Start Discount -->
-    <div class="discount" id="discount">
-        <div class="image">
-            <div class="cont">
-                <h2>We Have A Discount</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur,
-                    recusandae
-                    ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel
-                    similique
-                    laborum dicta aperiam odit doloribus corporis.
-                </p>
-                <img decoding="async" src="images/discount.png" alt="" />
+        <!-- end news  -->
+        <!-- Start Discount -->
+        <div class="discount" id="discount">
+            <div class="image">
+                <div class="cont">
+                    <h2>We Have A Discount</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur,
+                        recusandae
+                        ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel
+                        similique
+                        laborum dicta aperiam odit doloribus corporis.
+                    </p>
+                    <img decoding="async" src="images/discount.png" alt="" />
+                </div>
+            </div>
+            <div class="form">
+                <div class="cont">
+                    <h2>Request A Discount Code </h2>
+                    <form action="">
+                        <input class="input" type="text" placeholder="Your Name" name="name" />
+                        <input class="input" type="email" placeholder="Your Email" name="email" />
+                        <input class="input" type="text" placeholder="Your Phone" name="mobile" />
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="form">
-            <div class="cont">
-                <h2>Request A Discount Code </h2>
-                <form action="">
-                    <input class="input" type="text" placeholder="Your Name" name="name" />
-                    <input class="input" type="email" placeholder="Your Email" name="email" />
-                    <input class="input" type="text" placeholder="Your Phone" name="mobile" />
-                    <input type="submit" value="Send" />
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- End Discount -->
-    <!-- start footer -->
-    <footer>
-        <div class="footer-container container">
-            <div class="content_1">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="content_2">
-                <h4>SHOPPING</h4>
-                <a href="#sellers">Clothing Store</a>
-                <a href="#sellers">Accessories</a>
-            </div>
-            <div class="content_3">
-                <h4>SHOPPING</h4>
-                <a href="https://www.instagram.com/3abak_cosmetics/" target="_blank">Contact Us</a>
-                <a href="https://codepen.io/sandeshbodake/full/Jexxrv" target="_blank">Return and Exchange</a>
-            </div>
-            <div class="content_4">
-                <h4>NEWLETTER</h4>
-                <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+        <!-- End Discount -->
+        <!-- start footer -->
+        <footer>
+            <div class="footer-container container">
+                <div class="content_1">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="content_2">
+                    <h4>SHOPPING</h4>
+                    <a href="#sellers">Clothing Store</a>
+                    <a href="#sellers">Accessories</a>
+                </div>
+                <div class="content_3">
+                    <h4>SHOPPING</h4>
+                    <a href="https://www.instagram.com/3abak_cosmetics/" target="_blank">Contact Us</a>
+                    <a href="https://codepen.io/sandeshbodake/full/Jexxrv" target="_blank">Return and Exchange</a>
+                </div>
+                <div class="content_4">
+                    <h4>NEWLETTER</h4>
+                    <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
 
-                <hr>
+                    <hr>
+                </div>
             </div>
-        </div>
-        <div class="f-design">
-            <div class="f-design-txt container">
-                <p>WebSite made By
-                    <a href="https://www.linkedin.com/in/yousef-abdallah-893980283/"> <i class="fa-brands fa-linkedin"
-                            style="color: #ffffff; margin: 0px 10px 10px;  font-size: 30px;"></i> </a>
+            <div class="f-design">
+                <div class="f-design-txt container">
+                    <p>WebSite made By
+                        <a href="https://www.linkedin.com/in/yousef-abdallah-893980283/"> <i
+                                class="fa-brands fa-linkedin"
+                                style="color: #ffffff; margin: 0px 10px 10px;  font-size: 30px;"></i> </a>
 
 
 
 
-                </p>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- end footer -->
+        </footer>
+        <!-- end footer -->
 </body>
 
 </html>

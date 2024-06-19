@@ -154,7 +154,6 @@ header nav {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.877);
     position: fixed;
     width: 100%;
     left: 0;
@@ -166,95 +165,6 @@ header ul {
     display: flex;
 }
 
-header nav .toogle-menu {
-    font-size: 22px;
-    color: #000000;
-    width: 2px;
-}
-
-
-
-
-@media (max-width: 767px) {
-
-
-
-    header nav ul {
-        display: none;
-    }
-
-    header nav .toogle-menu:hover+ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.788);
-    }
-
-    header nav ul li a {
-        color: rgb(0, 0, 0);
-        padding: 15px !important;
-
-    }
-
-}
-
-@media (min-width: 768px) {
-
-    header nav .toogle-menu:hover {
-        display: flex;
-    }
-
-
-}
-
-
-
-@media (min-width: 768px) {
-    header nav .toogle-menu {
-        display: none;
-    }
-
-}
-
-header .continer::after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 30px);
-    height: 1px;
-    background: #000000;
-    bottom: 0px;
-    left: 15px;
-
-}
-
-
-header ul li a.active,
-header ul li a:hover {
-    color: var(--mian-color);
-    background-color: #00000011;
-    border-bottom: 1px solid var(--mian-color);
-    font-weight: 700;
-
-}
-
-
-
-header .logo.active,
-header .logo:hover {
-    padding: 26px 0px;
-    z-index: 1;
-    border-bottom: 1px solid var(--mian-color);
-
-}
-
-
-header .continer nav ul li {
-    display: flex;
-}
-
 header .continer nav ul li a {
     display: block;
     transition: 0.3s;
@@ -263,14 +173,18 @@ header .continer nav ul li a {
     font-size: 14px;
     color: rgb(0, 0, 0);
 }
+@media(max-width:991px) {
+    header nav ul li a .hide{
+        display: none;
+    }
 
-header .form {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    position: relative;
-    padding-left: 20px;
-    margin-left: 30px;
-    border-left: 1px solid rgb(0, 0, 0);
+}
+
+@media(min-width:992px) {
+    header nav ul li a .show {
+        display: none;
+    }
+
 }
 
 #cartItems {
@@ -340,6 +254,7 @@ header .form {
 
 .checkout-container .fill {
     padding: 10px;
+    font-size: 30px;
 }
 
 .checkout-item-details {
@@ -408,7 +323,7 @@ header .form {
 }
 
 button.btn {
-    width: 100%;
+    width: 102%;
     padding: 12px;
     background-color: var(--primary-color);
     color: var(--white);
@@ -435,6 +350,9 @@ button.btn:hover {
         height: 60px;
     }
 
+        .checkout-container .fill {
+            font-size: 20px;
+        }
     .checkout-item-details {
         font-size: 0.9rem;
     }
