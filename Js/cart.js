@@ -52,3 +52,25 @@ function checkout() {
 
 // Initialize the cart display when the page loads
 document.addEventListener('DOMContentLoaded', loadCart);
+
+// Get the header element
+// Get the header element
+const header = document.getElementById('siteHeader');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    // Scroll down
+    if (currentScroll > lastScroll && currentScroll > header.clientHeight) {
+        header.classList.add('header-hide');
+        header.classList.remove('header-show');
+    }
+    // Scroll up
+    else {
+        header.classList.remove('header-hide');
+        header.classList.add('header-show');
+    }
+
+    lastScroll = currentScroll;
+});

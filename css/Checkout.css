@@ -154,7 +154,7 @@ header nav {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 0;
@@ -173,8 +173,9 @@ header .continer nav ul li a {
     font-size: 14px;
     color: rgb(0, 0, 0);
 }
+
 @media(max-width:991px) {
-    header nav ul li a .hide{
+    header nav ul li a .hide {
         display: none;
     }
 
@@ -187,6 +188,25 @@ header .continer nav ul li a {
 
 }
 
+
+/* Sticky header */
+#siteHeader {
+    background-color: rgba(255, 255, 255, 0.877);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.header-hide {
+    transform: translateY(-100%);
+}
+
+.header-show {
+    transform: translateY(0);
+}
 #cartItems {
     max-height: 300px;
     overflow-y: auto;
@@ -350,9 +370,10 @@ button.btn:hover {
         height: 60px;
     }
 
-        .checkout-container .fill {
-            font-size: 20px;
-        }
+    .checkout-container .fill {
+        font-size: 20px;
+    }
+
     .checkout-item-details {
         font-size: 0.9rem;
     }
@@ -474,4 +495,3 @@ button.btn:hover {
     background-color: white;
     color: var(--primary-color);
 }
-

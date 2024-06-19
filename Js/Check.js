@@ -71,3 +71,22 @@ document.getElementById('orderForm').addEventListener('submit', function (event)
 
 // Populate checkout items and total initially
 displayCheckoutItems();
+
+const header = document.getElementById('siteHeader');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > header.clientHeight) {
+        // Scroll down
+        header.classList.add('header-hide');
+        header.classList.remove('header-show');
+    } else {
+        // Scroll up or at the top
+        header.classList.remove('header-hide');
+        header.classList.add('header-show');
+    }
+
+    lastScrollTop = scrollTop;
+});

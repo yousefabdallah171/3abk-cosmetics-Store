@@ -89,6 +89,8 @@ body {
 }
 
 body {
+        font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
     font-family: "Poppins", sans-serif;
 }
 
@@ -229,7 +231,7 @@ header {
     position: fixed;
     width: 100%;
     left: 0;
-    z-index: 2;
+    z-index: 1000;
 }
 
 header ul {
@@ -274,25 +276,11 @@ header nav .toogle-menu {
         padding: 0 20px 0 0;
     }
 
-    header nav ul {
-        display: none;
-    }
-
-    header nav .toogle-menu:hover+ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.788);
-    }
 
     header nav ul li a {
         color: rgb(0, 0, 0);
         padding: 15px !important;
-
-    }
+    } 
 
 }
 
@@ -306,72 +294,56 @@ header nav .toogle-menu {
 }
 
 
-
-@media (min-width: 768px) {
-    header nav .toogle-menu {
-        display: none;
-    }
-
-}
-
-header .continer::after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 30px);
-    height: 1px;
-    background: #000000;
-    bottom: 0px;
-    left: 15px;
-
-}
-
-
-header ul li a.active,
-header ul li a:hover {
-    color: var(--mian-color);
-    background-color: #00000011;
-    border-bottom: 1px solid var(--mian-color);
-    font-weight: 700;
-
-}
-
-
-
-header .logo.active,
-header .logo:hover {
-    padding: 26px 0px;
-    z-index: 1;
-    border-bottom: 1px solid var(--mian-color);
-
-}
-
-
-header .continer nav ul li {
-    display: flex;
-}
-
 header .continer nav ul li a {
     display: block;
     transition: 0.3s;
-    text-decoration: none;
     padding: 20px 10px;
-    font-size: 14px;
-    color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+}
+@media(max-width:991px){
+    header .continer nav ul li a{
+    font-size: 12px;   
+    padding: 50px 8px !important;
+    }
+header .form{
+    padding-left: 10px !important;
+margin-left: 5px !important;
+}
+        header .logo img{
+height:50px;
+        }
 }
 
+header ul li .active,
+header ul li :hover {
+color: var(--primary-color) !important;
+    
+}
+
+
+
+
 header .form {
-    color: rgb(0, 0, 0);
+    color: rgb(0,0, 0);
     font-size: 20px;
     position: relative;
     padding-left: 20px;
     margin-left: 30px;
-    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid var(--primary-color);
 }
 
 #cartItems {
     max-height: 300px;
     overflow-y: auto;
 }
+
+
+
+
 
 
 /* /* end header    */

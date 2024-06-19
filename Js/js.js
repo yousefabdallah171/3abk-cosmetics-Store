@@ -51,6 +51,3 @@ function checkout() {
         alert('Your cart is empty!');
     }
 }
-
-// Initialize the cart display
-updateCart();
